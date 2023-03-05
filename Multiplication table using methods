@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Mul_table {
+	void table5(int c,int e)
+	{
+		System.out.println("the corresponding table is");
+		for(int i=1;i<=e;i++)
+		{
+		System.out.println(i+ "*" + c + "="+i*c);
+    	}
+	}
+	void table4(int c,int e)
+	{
+		System.out.println("the corresponding table is ");
+		int d=c-1;
+		for(int i=1;i<=e;i++)
+		{
+			System.out.println(i+ "*" + d +"="+i*d);
+			                                        
+		}
+		
+	}
+	void table3(int c,int e)
+	{
+		System.out.println("the corresponding table is ");
+		int d=c-2;
+		for(int i=1;i<=e;i++)
+		{
+			System.out.println(i+ "*" + d +"="+i*d);
+		}
+		
+	}
+		
+	public static void main(String[] args) {
+		Mul_table p=new Mul_table();   //object creation
+		Scanner g=new Scanner(System.in);
+		System.out.println("enter a number");
+		int a=g.nextInt();
+		System.out.println("enter the limit");
+		int b=g.nextInt();
+		p.table5(a,b);  //method 1 is called
+		p.table4(a,b);  //method 2 is called
+	  p.table3(a,b);  //method 3 is called
+	}
+
+}
