@@ -1,0 +1,60 @@
+import java.util.*;
+
+public class P_if_else {
+
+	void personal(String f, String g)
+	{
+
+		System.out.println("name="+f);
+		System.out.println("place="+g);
+	
+	}
+	void marks( int h,int i,int j )
+	{
+		if(h>24)
+		{
+			System.out.println("Maths :pass");
+		}else 
+		{
+			System.out.println("Maths :fail");
+		}
+		
+	if(i>30)
+		{
+		System.out.println(" english :pass");
+		}
+	else
+	{
+		System.out.println(" english :fail");
+	}
+	if(j>20)
+	{
+		System.out.println(" malayalam:pass");
+	}else
+	{
+		System.out.println(" malayalam:fail");
+	}
+	}
+	public static void main(String[] args) {
+		P_if_else p=new P_if_else();
+		Scanner g=new Scanner(System.in);
+		System.out.println("enter name");
+	    String a=g.next();
+	    System.out.println("enter place");
+	    String b=g.next();
+		
+
+	     
+	     System.out.println("enter 1st sub mark");
+	     System.out.println("enter 2nd sub mark");
+	     System.out.println("enter 3rd sub mark");
+	     int c =g.nextInt();
+	     int d =g.nextInt();
+	     int e =g.nextInt();
+	     
+	   p.personal(a,b);
+	   p.marks(c,d,e);
+	   
+	}
+	
+}
