@@ -1,0 +1,34 @@
+import java.util.*;
+public class P_greater
+{
+	
+	 void p_greater( int c,int d)
+	{
+		 if (c>d)
+		 {
+			 System.out.println( c+" is greater" );
+		 }
+		 else
+		 {
+			 System.out.println(d+" is greater" );
+		
+		 }
+			 
+		 
+	}
+
+	public static void main(String[] args) {
+		P_greater p=new P_greater();
+		Scanner g=new Scanner(System.in);
+		System.out.println("enter 1 number");
+		       int a= g.nextInt();
+	    System.out.println("enter 2number");
+		       int b= g.nextInt();
+		       p.p_greater(a,b);
+		
+		
+				
+
+	}
+
+}
