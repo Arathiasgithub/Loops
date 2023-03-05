@@ -1,0 +1,69 @@
+import java.util.*;
+public class Prog_sw3 {
+	
+	
+	void add(int x,int y)
+	{
+		System.out.println("the result of additon is ="+(x+y));
+	}
+	void sub(int x,int y)
+	{
+        System.out.println("the result of substraction is ="+(x-y));
+	}
+	void mul(int x,int y)
+	{
+        System.out.println("the result of multiplication is ="+(x*y));
+	}
+	void div(int x,int y)
+	{
+         System.out.println("the result of division is ="+(x/y));
+	}
+	void greater(int x,int y)
+	{
+	if(x>y)
+	   {
+		System.out.println(  x+"is greater");
+		
+	   }
+	else
+	   {
+		System.out.println(y+"is greater");
+	   }
+	}
+	public static void main(String[] args) {
+		
+	       Prog_sw3 p=new Prog_sw3();       // obj creation for user class
+	       Scanner g=new Scanner(System.in) ; // obj creation for scanner class
+	      
+		   System.out.println("enter frst number");
+		   int a=g.nextInt();
+		   System.out.println("enter sec number");
+		   int b=g.nextInt();
+		   
+		   System.out.println("1:Addition");
+		   System.out.println("2:substraction");
+		   System.out.println("3:multiplication");
+		   System.out.println("4:division");
+		   System.out.println("5:greatest number");
+		  
+		   System.out.println("please enter an option");
+		   int choice=g.nextInt();
+		   
+		switch (choice) 
+		{
+		case 1: p.add(a,b);   //obj creation for addn
+			    break;
+		case 2: p.sub(a,b);    //obj creation for sub
+			    break;
+		case 3: p.mul(a,b);    //obj creation for mul
+			    break;
+		case 4: p.div(a,b);     //obj creation for div
+			    break;
+		case 5: p.greater(a, b);  //obj creation for greater number
+	            break;
+		default: System.out.println("invalid option");
+		        break;
+		}
+	}	
+
+	}
