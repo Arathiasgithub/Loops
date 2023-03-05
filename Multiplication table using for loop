@@ -1,0 +1,24 @@
+import java.util.*;
+public class Multiplication_table {
+	
+	void table(int b)
+	{
+		for(int i=1;i<=b;i++)
+		{
+		System.out.println(i+" * "+b+" = "+i*b);
+    	}
+	}
+	public static void main(String[]args)
+	{  
+		Multiplication_table p=new Multiplication_table();// object creation
+		Scanner g=new Scanner(System.in);
+		System.out.println("enter a number");
+		int a=g.nextInt();
+	
+		
+		for(int i=a;i>0;i--)
+		{	
+		p.table(i);
+		}
+	}
+}
