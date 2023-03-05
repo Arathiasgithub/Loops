@@ -1,0 +1,46 @@
+import java.util.*;
+public class Prog_sw {
+
+
+	public static void main(String[] args) {
+	
+  Prog_sw p=new Prog_sw();
+  Scanner g=new Scanner(System.in);
+
+   System.out.println("enter frst number");
+   int a=g.nextInt();
+   System.out.println("enter sec number");
+   int b=g.nextInt();
+   
+   System.out.println("1:Addition");
+   System.out.println("2:sub");
+   System.out.println("3:mul");
+   System.out.println("4:div");
+   System.out.println("please enter an option");
+   
+int choice=g.nextInt();
+switch (choice) 
+{
+case 1:
+	 int c=a+b;
+	 System.out.println("the result of addition" +c);
+	break;
+case 2:
+	  int d=a-b;
+	  System.out.println(" the result of substraction "+d);
+	  break;
+case 3:
+	   
+	   System.out.println("the result of multiplication" +(a*b));
+	   break;
+case 4:
+	    int f=a/b;
+	    System.out.println("the result of division" +f);
+	    break;
+default: 
+	    System.out.println("invalid option");
+        break;
+}
+	}
+
+}
